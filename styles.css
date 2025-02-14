@@ -333,11 +333,6 @@ footer {
         font-size: 10pt;
     }
 
-    .container_cards,
-    .container-card-projects,
-    .service-categories {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* DISPOSITIVOS PEQUEÑOS (Menos de 480px) */
