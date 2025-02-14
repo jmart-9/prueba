@@ -340,11 +340,16 @@ footer {
     .hero {
         flex-direction: column;
         text-align: center;
-        font-size: 2pt;
     }
 
     .hero-text, .hero-image {
         width: 100%;
+    }
+    .about-h2 {
+        font-size: 2pt;
+    }
+    .about-p {
+        font-size: 2pt;
     }
 }
 
@@ -364,7 +369,6 @@ footer {
 @media (max-width: 480px) {
     .hero {
         padding: 20px 0;
-        font-size: 2pt;
     }
 
     .hero-text h1 {
@@ -373,5 +377,11 @@ footer {
 
     nav ul {
         font-size: 14px;
+    }
+    .about-h2 {
+        font-size: 2pt;
+    }
+    .about-p {
+        font-size: 2pt;
     }
 }
