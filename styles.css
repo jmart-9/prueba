@@ -381,12 +381,19 @@ footer {
         font-size: 14px;
     }
     .about-h2 {
-        font-size: 4pt;
+        font-size: 1.5rem;
     }
     .about-p {
-        font-size: 4pt;
+        font-size: 0.75rem;
+    }
+    .card img {
+        width: 50px;
+    }
+    .card h3, .card p{
+        font-size: 0.75rem;
     }
     .container_btn, .container_cards, .container-card-projects{
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
