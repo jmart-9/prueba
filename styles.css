@@ -20,11 +20,13 @@ img {
 /* ================== NAVBAR ================== */
 .navbar {
     display: flex;
+    top: -60px; /* Empieza oculta arriba */
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
     background: #333;
     color: white;
+    transition: top 0.3s; /* Animación suave */
 }
 .nav-links {
     display: flex;
@@ -119,8 +121,14 @@ img {
 }
 
 .about-h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
+    font-size: 3rem; /* Tamaño de fuente */
+    text-align: center; /* Centra el texto */
+    margin: 20px 0; /* Margen superior e inferior */
+    padding: 40px 20px; /* Espaciado interno */
+    position: relative; /* Para posicionar el borde */
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 2px rgb(56, 51, 23), 0px 0px 2px rgb(61, 59, 22), 5px 5px 15px rgb(0, 0, 0);
 }
 
 .about-p {
@@ -133,7 +141,7 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    padding: 40px 20px;
+    padding: 100px 20px;
 }
 .container_cards img {
     width: 100px;
@@ -149,13 +157,6 @@ img {
 }
 
 /* ================== PROYECTOS ================== */
-.container_cards {
-    display: flex;
-    flex-direction: row;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 40px 20px;
-}
 .container-projects {
     display: flex;
     flex-direction: column;
@@ -180,13 +181,13 @@ img {
     text-shadow: 0px 0px 2px rgb(56, 51, 23), 0px 0px 2px rgb(61, 59, 22), 5px 5px 15px rgb(0, 0, 0);
 }
 .container-card-projects {
-    width: 75%;
     display: flex;
     flex-direction: row;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 50px 50px;
-    padding-bottom: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
 }
 
 .card-projects {
@@ -346,10 +347,10 @@ footer {
         width: 100%;
     }
     .about-h2 {
-        font-size: 2pt;
+        font-size: 8pt;
     }
     .about-p {
-        font-size: 2pt;
+        font-size: 8pt;
     }
 }
 
