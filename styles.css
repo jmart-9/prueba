@@ -243,7 +243,6 @@ img {
     background-repeat: no-repeat; /* Impide que la imagen se repita */
     background-size: cover; /* Ajusta la imagen para cubrir todo el área */
     background-position: center;
-    border-radius: 10px;
 }
 .services h2 {
     padding-top: 150px;
