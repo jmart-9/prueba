@@ -87,6 +87,7 @@ img {
     justify-content: center;
     gap: 35px;
     padding-top: 12%;
+    border-radius: 10px;
 }
 
 .btn-about, .btn-projects {
@@ -219,13 +220,13 @@ img {
 
 .btn_galery {
     padding: 15px 25px;
-        font-size: 16pt;
-        border:none;
-        cursor: pointer;
-        transition: 0.3s;
-        border-radius: 10px;
-        background: #0a3b63;
-        color: white;
+    font-size: 16pt;
+    border:none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+    background: #0a3b63;
+    color: white;
 }
 
 .btn_galery:hover {
@@ -395,24 +396,23 @@ footer {
     .about-p {
         font-size: 0.75rem;
     }
+    
+    .container_btn, .container_cards, .card-projects{
+        display: grid;
+        flex-direction: row;
+        align-items: center;
+        width: 150px;
+    }
+    .card {
+        width: 150px;
+        padding: 3px;
+    }
     .card img {
         align-items: center;
         width: 50px;
     }
     .card h3, .card p, .card-projects h3, .card-projects p{
         font-size: 0.25rem;
-    }
-    .container_btn, .container_cards, .card-projects{
-        display: grid;
-        flex-direction: row;
-        align-items: center;
-        width: 150px;
-        padding: 100px 10px;
-        padding-bottom: 75px;
-    }
-    .card {
-        width: 150px;
-        padding: 3px;
     }
     .card-content {
         font-size: 0.50rem;
