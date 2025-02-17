@@ -401,9 +401,8 @@ footer {
         display: grid;
         flex-direction: row;
         align-items: center;
-        width: 150px;
+        width: 150px
     }
-
     .card, .container {
         width: 150px;
         padding: 3px;
