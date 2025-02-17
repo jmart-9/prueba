@@ -402,10 +402,15 @@ footer {
     .card h3, .card p, .card-projects h3, .card-projects p{
         font-size: 0.25rem;
     }
-    .container_btn, .container_cards, .card, .card-projects{
+    .container_btn, .container_cards, .card-projects{
         display: grid;
         flex-direction: row;
         align-items: center;
+        width: 150px;
+        padding: 100px 10px;
+        padding-bottom: 75px;
+    }
+    .card {
         width: 150px;
         padding: 3px;
     }
