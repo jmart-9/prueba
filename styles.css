@@ -397,13 +397,13 @@ footer {
         font-size: 0.75rem;
     }
     
-    .container_btn, .container_cards, .card-projects{
+    .container_btn, .container_cards, .card-projects, .container{
         display: grid;
         flex-direction: row;
         align-items: center;
         width: 150px;
     }
-    .card {
+    .card, .container {
         width: 150px;
         padding: 3px;
     }
