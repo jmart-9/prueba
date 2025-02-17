@@ -403,6 +403,9 @@ footer {
         align-items: center;
         width: 150px;
     }
+    .container_cards {
+        padding: 100px 5px;
+    }
     .card, .container {
         width: 150px;
         padding: 3px;
