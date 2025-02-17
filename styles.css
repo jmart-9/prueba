@@ -20,7 +20,6 @@ img {
 /* ================== NAVBAR ================== */
 .navbar {
     display: flex;
-    top: -60px; /* Empieza oculta arriba */
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
@@ -140,21 +139,22 @@ img {
 .container_cards {
     display: flex;
     flex-direction: row;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 100px 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
 }
 .container_cards img {
-    width: 100px;
+    width: 75px;
 }
 
 .card {
     background: #f8f9fa;
-    padding: 20px;
     justify-items: center;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.404);
 }
 
 /* ================== PROYECTOS ================== */
@@ -186,7 +186,7 @@ img {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 100px;
+    padding-top: 50px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
 }
@@ -211,17 +211,22 @@ img {
 
 .card-content {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+}
+
+.container_btn_galery {
+    padding-top: 50px;
 }
 
 .btn_galery {
-    padding: 12px 12px;
-    font-size: 1rem;
-    background: #264653;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
+    padding: 15px 25px;
+        font-size: 16pt;
+        border:none;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 10px;
+        background: #0a3b63;
+        color: white;
 }
 
 .btn_galery:hover {
@@ -272,10 +277,10 @@ img {
 .container {
     width: 350px;
     color: white;
-    text-shadow: 0px 0px 2px rgb(255, 255, 255), 0px 0px 2px rgb(255, 255, 255), 5px 5px 15px rgba(255, 255, 255, 0.466);
+    text-shadow: 0px 0px 2px rgb(255, 255, 255), 0px 0px 2px rgb(255, 255, 255), 5px 5px 20px rgba(255, 255, 255, 0.466);
     background: rgb(9, 25, 78);
     border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.1);
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.623);
 }
 .container img {
     border-radius: 10px;
@@ -380,24 +385,36 @@ footer {
     nav ul {
         font-size: 14px;
     }
-    .about-h2 {
+    .about-h2, .container-projects h2, .services h2 {
         font-size: 1.5rem;
     }
-    .about-p {
+    .about-p, .container-projects p, .services p{
         font-size: 0.75rem;
     }
     .card img {
+        align-items: center;
         width: 50px;
     }
-    .card h3, .card p{
-        font-size: 0.75rem;
+    .card h3, .card p, .card-projects h3, .card-projects p{
+        font-size: 0.25rem;
     }
-    .container_btn, .container_cards, .container-card-projects{
-        display: flex;
-        flex-direction: column;
+    .container_btn, .card, .card-projects, .container{
+        display: grid;
+        flex-direction: row;
         align-items: center;
+        width: 150px;
     }
-    .card-projects {
-        width: 250px;
+    .card-content {
+        font-size: 0.50rem;
+    }
+    .btn_galery {
+        padding: 15px 25px;
+        font-size: 16pt;
+        border:none;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 10px;
+        background: #0a3b63;
+        color: white;
     }
 }
