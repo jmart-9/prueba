@@ -348,14 +348,18 @@ footer {
         text-align: center;
     }
 
+    .hero h1 {
+        font-size: 46pt;
+    }
+
     .hero-text, .hero-image {
         width: 100%;
     }
     .about-h2 {
-        font-size: 8pt;
+        font-size: 12pt;
     }
     .about-p {
-        font-size: 8pt;
+        font-size: 12pt;
     }
 }
 
@@ -386,6 +390,15 @@ footer {
         justify-content: center;
         gap: 35px;
 
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background: #333;
+        color: white;
+        transition: top 0.3s; /* Animación suave */
     }
     nav ul {
         font-size: 14px;
