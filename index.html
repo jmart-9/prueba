@@ -13,25 +13,24 @@
             <img src="img/logo.png" alt="Company Logo" class="logo">
         </div>
         <nav>
-            <ul class="navlinks" onclick="toggleMenu()">
+            <ul id="navlist" class="navbar">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT US</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href="#contact">CONTACT US</a></li>
             </ul>
-            <div class="menu-icon">
-                <i class="fa-solid fa-bars"></i>
+            <!-- Icono de menú para pantallas pequeñas -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i> <!-- Aquí va el ícono de hamburguesa -->
             </div>
         </nav>
         <script>
-            function toggleNavbar() {
-              const navlist = document.getElementById('navbarList');
-              navlist.style.display = navlist.style.display === 'none' ? 'block' : 'none';
-            }
-            </script>
+        function toggleMenu() {
+            const navlist = document.getElementById("navlist");
+                navlist.classList.toggle("active"); // Agrega o elimina la clase 'active' al menú
+        }
         </script>
-        <script src="https://kit.fontawesome.com/1c17fcae1a.js" crossorigin="anonymous"></script>
     </header>
 <main>
     <section id="home" class="hero">

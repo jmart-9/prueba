@@ -434,17 +434,27 @@ footer {
         flex-direction: column;
         text-align: center;   
         gap: 0;
-        overflow: hidden;
         visibility: hidden;
     }
     nav ul li {
         padding: 20px;
-        overflow: hidden;
 
     }
+
+    /* Se muestra el icono de menú en pantallas pequeñas */
     .menu-icon {
         display: block;
+        cursor: pointer;
+    }
 
+    /* El menú inicialmente estará oculto en pantallas pequeñas */
+    .navbar {
+        display: none;
+    }
+
+    /* Al mostrar el menú con la clase 'active', se presenta en pantalla */
+    #navlist.active {
+        display: block;
     }
 
     .about-h2, .services h2, .container-projects h2 {
