@@ -27,11 +27,11 @@ img {
     color: white;
     transition: top 0.3s; /* Animación suave */
 }
-.nav-links {
+.navlinks {
     display: flex;
     gap: 20px;
 }
-.menu-toggle {
+.menu-icon {
     display: none;
     background: none;
     font-size: 24px;
@@ -402,7 +402,24 @@ footer {
     }
     nav ul {
         font-size: 14px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;   
+        gap: 0;
+        overflow: hidden;
     }
+    nav ul li {
+        padding: 20px;
+
+    }
+    .menu-icon {
+        display: block;
+
+    }
+
     .about-h2, .services h2, .container-projects h2 {
         font-size: 1.5rem;
     }

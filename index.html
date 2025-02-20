@@ -13,14 +13,31 @@
             <img src="img/logo.png" alt="Company Logo" class="logo">
         </div>
         <nav>
-            <ul class="nav-links">
+            <ul class="nav-links" onclick="toggleMenu()">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT US</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href="#contact">CONTACT US</a></li>
             </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
+        <script>
+            let navlinks = document.getElementById("navlinks")
+            navlinks.style.maxHeight = "0px";
+
+            function toggleMenu(){
+                if (navlinks.style.maxHeight = "0px") 
+                {
+                    navlinks.style.maxHeight = "300px";
+                } else {
+                    navlinks.style.maxHeight = "0px";
+                }
+            }
+        </script>
+        <script src="https://kit.fontawesome.com/1c17fcae1a.js" crossorigin="anonymous"></script>
     </header>
 <main>
     <section id="home" class="hero">
