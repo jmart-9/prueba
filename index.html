@@ -25,18 +25,11 @@
             </div>
         </nav>
         <script>
-            let navlinks = document.getElementById("navlinks")
-            navlinks.style.maxHeight = "0px";
-
-            function toggleMenu(){
-                if (navlinks.style.maxHeight = "0px") 
-                {
-                    navlinks.style.maxHeight = "300px";
-                } else {
-                    navlinks.style.maxHeight = "0px";
-                }
+            function toggleNavbar() {
+              const navbar = document.getElementById('navbarList');
+              navbar.style.display = navbar.style.display === 'none' ? 'block' : 'none';
             }
-        </script>
+            </script>
         <script src="https://kit.fontawesome.com/1c17fcae1a.js" crossorigin="anonymous"></script>
     </header>
 <main>
