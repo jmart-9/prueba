@@ -475,6 +475,7 @@ footer {
         padding: 3px;
     }
     .card img {
+        justify-items: center;
         align-items: center;
         width: 50px;
     }
